@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat in Dark</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+        .main-cont{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+          
+        }
+        .images{
+            display: flex;
+            flex-direction: column;
+        }
+        .cat{width: 200px;}
+        .bulb{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-cont">
+        <div class="images">
+        <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-on-img.png?updatedAt=1702818139573" alt="" class="bulb" id="bulb">
+        <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-img.png?updatedAt=1702818167774" alt="" class="cat"  id="cat">
+        </div>
+        <div class="footer">
+            <p class="para" id="para">Switched Off</p>
+            <button class="btn" id="on">On</button>
+            <button class="btn" id="off">Off</button>
+        </div>
+    </div>
+    <script>
+        const imageCat = document.getElementById("cat");
+        const imageBulb = document.getElementById("bulb");
+        const paragraph = document.getElementById("para");
+
+        const btn1 = document.getElementById("on");
+            const btn2 = document.getElementById("off");
+            
+            btn1.addEventListener("click",()=>{
+                  imageBulb.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-on-img.png?updatedAt=1702818139573"
+                imageCat.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-img.png?updatedAt=1702818167774"
+                paragraph.textContent ="Switch On"
+            })
+            btn2.addEventListener("click", () => {
+                     imageBulb.src= "https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-off-img.png?updatedAt=1702818065200"
+                     imageCat.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-eyes-img.png?updatedAt=1702818102345"
+                      paragraph.textContent = "Switch Off"
+                    })
+
+
+    </script>
+</body>
+</html>

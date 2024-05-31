@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Counter
+    </h1>
+    <p id="ans">0</p>
+    <button id="dec">Decrease</button>
+    <div id="rec">Reset</div>
+    <button id="inc">Increase</button>
+    <script>
+       const ans = document.getElementById("ans");
+       const dec = document.getElementById("dec");
+       const rec = document.getElementById("rec");
+        const inc =     document.getElementById("inc");
+            dec.addEventListener("click",()=>{
+                ans.textContent = parseInt(ans.textContent)-1;
+            })
+              inc.addEventListener("click", () => {
+                  ans.textContent = parseInt(ans.textContent) + 1;
+                })
+                  rec.addEventListener("click", () => {
+                      ans.textContent = 0;
+                    })
+    </script>
+</body>
+</html>
