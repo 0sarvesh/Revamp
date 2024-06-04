@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="form">
+
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name"  />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+        </div>
+        <div>
+            <label for="num">Number</label>
+            <input type="number" id="num"  />
+        </div>
+        
+        <label for="mes">Message</label>
+        <textarea name="mes" id="mes"></textarea>
+        <button type="submit">Submit</button>
+          <p id="err"></p>
+    </form>
+ <script>
+    const form  = document.getElementById("form");
+    const email = document.getElementById("email");
+        const number = document.getElementById("num");
+            const name = document.getElementById("name");
+
+            const emailerr = document.getElementById("err")
+    form.addEventListener("submit",()=>{
+        e.preventDefault();
+        console.log(name.value);
+        const validate = ()=>{
+           isValidEmail(email.value);
+        }
+
+    })
+    
+        function isValidEmail(email) {
+            const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if(regex.test(email)){
+                console.log("valid");
+                emailerr.innerText = "Passed";
+            }
+             else {
+                console.log("invalid");
+            }
+        }
+
+
+ </script>
+  </body>
+</html>
