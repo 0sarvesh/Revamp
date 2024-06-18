@@ -1,0 +1,106 @@
+### What is JavaScript?
+
+JavaScript is a high-level, interpreted programming language primarily used to create dynamic and interactive effects within web browsers. It enables developers to enhance user interfaces and add functionalities such as form validation, animations, and event handling.
+
+### Variables and Types
+
+javascript
+// Declaring variables
+let userAge = 25;
+let userName = "Alice";
+
+// Outputting variables
+console.log(userAge);  // 25
+console.log(userName); // Alice
+
+
+### Comments in JavaScript
+
+javascript
+
+ This function takes a name as a parameter
+ and returns a greeting message.
+
+
+### Operations
+
+javascript
+// Creating variables
+let num1 = 10;
+let num2 = 5;
+
+// Performing operations
+let sum = num1 + num2;
+let difference = num1 - num2;
+let product = num1 * num2;
+let quotient = num1 / num2;
+
+// Displaying results
+console.log(sum);        // 15
+console.log(difference); // 5
+console.log(product);    // 50
+console.log(quotient);   // 2
+```
+
+### Data Types
+
+```javascript
+// String
+let str = "Hello, World!";
+console.log(str); // Hello, World!
+
+// Number
+let num = 42;
+console.log(num); // 42
+
+// Boolean
+let isJavaScriptFun = true;
+console.log(isJavaScriptFun); // true
+
+// Array
+let array = [1, 2, 3, 4, 5];
+console.log(array); // [1, 2, 3, 4, 5]
+```
+
+### Functions in JavaScript
+
+```javascript
+// Function declaration
+function greetUser(name) {
+    return "Hello, " + name + "!";
+}
+
+// Calling the function
+let greeting = greetUser("Bob");
+console.log(greeting); // Hello, Bob!
+```
+
+### if Else in JavaScript
+
+```javascript
+// Variable declaration
+let temperature = 35;
+
+// if-else statement
+if (temperature > 30) {
+    console.log("It's hot outside!");
+} else {
+    console.log("It's not too hot.");
+}
+// Output: It's hot outside!
+```
+
+### FOR LOOP
+
+```javascript
+// For loop to print numbers from 1 to 5
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+// Output: 1 2 3 4 5
+```
+
+### Loose vs Strict Equality
+
+- **Loose Equality (==)**: Compares values after type conversion if necessary. Example: `5 == '5'` is `true` because the string '5' is converted to the number 5.
+- **Strict Equality (===)**: Compares values without type conversion. Example: `5 === '5'` is `false` because they are of different types (number and string).
